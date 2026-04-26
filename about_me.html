@@ -15,10 +15,11 @@
      │  The JS at the bottom of this file auto-completes the base URL.  │
      └──────────────────────────────────────────────────────────────────┘ -->
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Ishan Kulkarni · IIT Madras · Senior Product Manager">
-<meta property="og:description" content="27 · Bengaluru · IIT Madras Dual Degree · CFA (All 3 Levels) · super.money (Walmart) · ₹50L+ · SCUBA diver, HYROX athlete, 11 countries. Anuroop Profile: MT15685">
-<meta property="og:image" content="https://raw.githubusercontent.com/Black98Hat/ishan_kulkarni/main/images/whatsapp_preview.jpeg" id="og-image">
-<meta property="og:image:type" content="image/jpeg">
+<meta property="og:title" content="Ishan Kulkarni · IIT Madras · Senior PM at Flipkart">
+<meta property="og:description" content="27 · Bengaluru · IIT Madras Dual Degree · CFA (All 3 Levels) · Senior PM · 50L+ · SCUBA diver, HYROX athlete, 11 countries. Anuroop Profile: MT15685">
+<meta property="og:image" content="https://raw.githubusercontent.com/Black98Hat/ishan_kulkarni/main/images/whatsapp_preview.png" id="og-image">
+<!-- ↑ REPLACE images/og_preview.jpg with your preferred WhatsApp preview image ↑ -->
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://github.com/Black98Hat/ishan_kulkarni/about_me" id="og-url">
@@ -27,6 +28,7 @@
 <meta name="twitter:title" content="Ishan Kulkarni · IIT Madras · Senior PM">
 <meta name="twitter:description" content="27 · IIT Madras + CFA · Senior PM · SCUBA diver · 11 countries · MT15685">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/Black98Hat/ishan_kulkarni/main/images/whatsapp_preview.png" id="tw-image">
+<!-- ↑ REPLACE images/og_preview.jpg with your preferred preview image ↑ -->
 <meta name="description" content="Ishan Kulkarni — 27, IIT Madras, Senior PM at super.money (Flipkart), CFA all 3 levels, HYROX athlete, SCUBA diver. Anuroop MT15685.">
 <meta name="theme-color" content="#F7F4EE">
 
@@ -1284,6 +1286,77 @@ body { animation: bodyFadeIn .5s ease forwards }
 ::selection { background:var(--gold-mid); color:var(--ink) }
 ::-webkit-selection { background:var(--gold-mid); color:var(--ink) }
 
+/* ══════════════════════════════════════════
+   LAGNALU — Subtle Indian Marriage Context
+   Hero mandala · corner arcs · eyebrow bars · section dividers · footer benediction
+══════════════════════════════════════════ */
+
+/* ① Hero mandala watermark */
+.hero-mandala {
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  pointer-events:none; overflow:hidden;
+}
+.hero-mandala svg {
+  width:720px; height:720px; flex-shrink:0;
+  opacity:0.15;
+  animation:mandalaSpin 150s linear infinite;
+  transform-origin:center center;
+}
+
+/* ② Corner quarter-mandala arcs on key sections */
+#family, #horoscope { position:relative; overflow:hidden }
+/* #partner already has position:relative; overflow:hidden */
+.corner-arc {
+  position:absolute;
+  width: clamp(200px, 28vw, 300px);
+  height: clamp(200px, 28vw, 300px);
+  pointer-events:none;
+  opacity:0.14;
+}
+.corner-arc.tr { top:0; right:0 }
+.corner-arc.bl { bottom:0; left:0; transform:rotate(180deg) }
+.corner-arc.tl { top:0; left:0; transform:scaleX(-1) }
+.corner-arc svg { width:100%; height:100%; overflow:visible }
+@media (max-width:480px) { .corner-arc { opacity:0.09 } }
+
+/* ③ Ornamental section divider */
+.lagnalu-divider {
+  display:flex; align-items:center; justify-content:center;
+  gap:14px; padding:0 24px 0;
+  pointer-events:none; user-select:none;
+  opacity:0.55;
+}
+.lagnalu-divider-line {
+  height:1px; flex:1; max-width:110px;
+  background:linear-gradient(to right, transparent, var(--gold) 85%);
+}
+.lagnalu-divider-line.r {
+  background:linear-gradient(to left, transparent, var(--gold) 85%);
+}
+.lagnalu-divider svg { width:36px; height:24px; flex-shrink:0 }
+
+/* ④ Eyebrow flanking bars on culturally resonant sections */
+.lagnalu-eyebrow::before,
+.lagnalu-eyebrow::after {
+  content:'';
+  display:inline-block;
+  width:14px; height:1px;
+  background:var(--gold);
+  opacity:0.6;
+  vertical-align:middle;
+}
+.lagnalu-eyebrow::before { margin-right:9px }
+.lagnalu-eyebrow::after  { margin-left:9px }
+
+/* ⑤ Footer benediction */
+.footer-lagnalu {
+  font-family:'Cormorant Garamond',serif;
+  font-size:.85rem; letter-spacing:.28em;
+  color:rgba(247,244,238,0.38);
+  margin-bottom:20px;
+}
+
 </style>
 </head>
 <body>
@@ -1321,6 +1394,89 @@ body { animation: bodyFadeIn .5s ease forwards }
 </nav>
 
 <section id="hero">
+
+  <!-- ① Mandala watermark — subconscious Indian marriage flair -->
+  <div class="hero-mandala" aria-hidden="true">
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#B07D3A">
+      <g transform="translate(200,200)">
+        <!-- Outermost bounding ring -->
+        <circle r="193" stroke-width="0.35" opacity="0.28"/>
+        <!-- 8 Mughal-arch outer shapes -->
+        <g stroke-width="0.65" opacity="0.48">
+          <path d="M-13,-142 C-13,-168 -6,-190 0,-195 C6,-190 13,-168 13,-142"/>
+          <path d="M-13,-142 C-13,-168 -6,-190 0,-195 C6,-190 13,-168 13,-142" transform="rotate(45)"/>
+          <path d="M-13,-142 C-13,-168 -6,-190 0,-195 C6,-190 13,-168 13,-142" transform="rotate(90)"/>
+          <path d="M-13,-142 C-13,-168 -6,-190 0,-195 C6,-190 13,-168 13,-142" transform="rotate(135)"/>
+          <path d="M-13,-142 C-13,-168 -6,-190 0,-195 C6,-190 13,-168 13,-142" transform="rotate(180)"/>
+          <path d="M-13,-142 C-13,-168 -6,-190 0,-195 C6,-190 13,-168 13,-142" transform="rotate(225)"/>
+          <path d="M-13,-142 C-13,-168 -6,-190 0,-195 C6,-190 13,-168 13,-142" transform="rotate(270)"/>
+          <path d="M-13,-142 C-13,-168 -6,-190 0,-195 C6,-190 13,-168 13,-142" transform="rotate(315)"/>
+        </g>
+        <!-- Outer circle -->
+        <circle r="145" stroke-width="0.45" opacity="0.4"/>
+        <!-- 16 diamonds on outer circle -->
+        <g fill="#B07D3A" stroke="none" opacity="0.38">
+          <path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z"/><path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(22.5)"/>
+          <path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(45)"/><path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(67.5)"/>
+          <path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(90)"/><path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(112.5)"/>
+          <path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(135)"/><path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(157.5)"/>
+          <path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(180)"/><path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(202.5)"/>
+          <path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(225)"/><path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(247.5)"/>
+          <path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(270)"/><path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(292.5)"/>
+          <path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(315)"/><path d="M0,-149 L3,-145 L0,-141 L-3,-145 Z" transform="rotate(337.5)"/>
+        </g>
+        <!-- 8 large lotus petals (outer ring) -->
+        <g stroke-width="0.65" opacity="0.5">
+          <path d="M0,-98 C20,-114 20,-140 0,-145 C-20,-140 -20,-114 0,-98 Z"/>
+          <path d="M0,-98 C20,-114 20,-140 0,-145 C-20,-140 -20,-114 0,-98 Z" transform="rotate(45)"/>
+          <path d="M0,-98 C20,-114 20,-140 0,-145 C-20,-140 -20,-114 0,-98 Z" transform="rotate(90)"/>
+          <path d="M0,-98 C20,-114 20,-140 0,-145 C-20,-140 -20,-114 0,-98 Z" transform="rotate(135)"/>
+          <path d="M0,-98 C20,-114 20,-140 0,-145 C-20,-140 -20,-114 0,-98 Z" transform="rotate(180)"/>
+          <path d="M0,-98 C20,-114 20,-140 0,-145 C-20,-140 -20,-114 0,-98 Z" transform="rotate(225)"/>
+          <path d="M0,-98 C20,-114 20,-140 0,-145 C-20,-140 -20,-114 0,-98 Z" transform="rotate(270)"/>
+          <path d="M0,-98 C20,-114 20,-140 0,-145 C-20,-140 -20,-114 0,-98 Z" transform="rotate(315)"/>
+        </g>
+        <!-- Middle circle -->
+        <circle r="98" stroke-width="0.45" opacity="0.48"/>
+        <!-- 8 dots between outer petals -->
+        <g fill="#B07D3A" stroke="none" opacity="0.4">
+          <circle cx="0" cy="-98" r="2.2" transform="rotate(22.5)"/><circle cx="0" cy="-98" r="2.2" transform="rotate(67.5)"/>
+          <circle cx="0" cy="-98" r="2.2" transform="rotate(112.5)"/><circle cx="0" cy="-98" r="2.2" transform="rotate(157.5)"/>
+          <circle cx="0" cy="-98" r="2.2" transform="rotate(202.5)"/><circle cx="0" cy="-98" r="2.2" transform="rotate(247.5)"/>
+          <circle cx="0" cy="-98" r="2.2" transform="rotate(292.5)"/><circle cx="0" cy="-98" r="2.2" transform="rotate(337.5)"/>
+        </g>
+        <!-- 8 inner lotus petals -->
+        <g stroke-width="0.65" opacity="0.6" fill="rgba(176,125,58,0.07)">
+          <path d="M0,-54 C15,-66 15,-84 0,-88 C-15,-84 -15,-66 0,-54 Z"/>
+          <path d="M0,-54 C15,-66 15,-84 0,-88 C-15,-84 -15,-66 0,-54 Z" transform="rotate(45)"/>
+          <path d="M0,-54 C15,-66 15,-84 0,-88 C-15,-84 -15,-66 0,-54 Z" transform="rotate(90)"/>
+          <path d="M0,-54 C15,-66 15,-84 0,-88 C-15,-84 -15,-66 0,-54 Z" transform="rotate(135)"/>
+          <path d="M0,-54 C15,-66 15,-84 0,-88 C-15,-84 -15,-66 0,-54 Z" transform="rotate(180)"/>
+          <path d="M0,-54 C15,-66 15,-84 0,-88 C-15,-84 -15,-66 0,-54 Z" transform="rotate(225)"/>
+          <path d="M0,-54 C15,-66 15,-84 0,-88 C-15,-84 -15,-66 0,-54 Z" transform="rotate(270)"/>
+          <path d="M0,-54 C15,-66 15,-84 0,-88 C-15,-84 -15,-66 0,-54 Z" transform="rotate(315)"/>
+        </g>
+        <!-- Inner circle -->
+        <circle r="54" stroke-width="0.45" opacity="0.65"/>
+        <!-- Center 8-petal lotus -->
+        <g stroke-width="0.65" opacity="0.7" fill="rgba(176,125,58,0.1)">
+          <path d="M0,-28 C8,-20 8,-8 0,0 C-8,-8 -8,-20 0,-28 Z"/>
+          <path d="M0,-28 C8,-20 8,-8 0,0 C-8,-8 -8,-20 0,-28 Z" transform="rotate(45)"/>
+          <path d="M0,-28 C8,-20 8,-8 0,0 C-8,-8 -8,-20 0,-28 Z" transform="rotate(90)"/>
+          <path d="M0,-28 C8,-20 8,-8 0,0 C-8,-8 -8,-20 0,-28 Z" transform="rotate(135)"/>
+          <path d="M0,-28 C8,-20 8,-8 0,0 C-8,-8 -8,-20 0,-28 Z" transform="rotate(180)"/>
+          <path d="M0,-28 C8,-20 8,-8 0,0 C-8,-8 -8,-20 0,-28 Z" transform="rotate(225)"/>
+          <path d="M0,-28 C8,-20 8,-8 0,0 C-8,-8 -8,-20 0,-28 Z" transform="rotate(270)"/>
+          <path d="M0,-28 C8,-20 8,-8 0,0 C-8,-8 -8,-20 0,-28 Z" transform="rotate(315)"/>
+        </g>
+        <!-- Innermost rings + center -->
+        <circle r="28" stroke-width="0.45" opacity="0.75"/>
+        <circle r="14" stroke-width="0.4" opacity="0.8"/>
+        <circle r="4" fill="#B07D3A" stroke="none" opacity="0.85"/>
+      </g>
+    </svg>
+  </div>
+
   <div class="hero-photo-wrap">
     <div class="hero-photo-ring"></div>
     <div class="hero-photo-inner">
@@ -1701,11 +1857,15 @@ body { animation: bodyFadeIn .5s ease forwards }
 
 <!-- ─── ⑨ FAMILY ─── -->
 <section id="family" class="section">
+  <!-- Corner quarter-mandala arcs -->
+  <div class="corner-arc tr" aria-hidden="true"><svg viewBox="0 0 200 200" fill="none" stroke="#B07D3A" xmlns="http://www.w3.org/2000/svg"><g transform="translate(200,0)"><path d="M-185,0 A185,185,0,0,1,0,185" stroke-width="0.6" opacity="0.45"/><path d="M-157,0 A157,157,0,0,1,0,157" stroke-width="0.6" opacity="0.5"/><path d="M-128,0 A128,128,0,0,1,0,128" stroke-width="0.7" opacity="0.55"/><path d="M-100,0 A100,100,0,0,1,0,100" stroke-width="0.7" opacity="0.6"/><path d="M-72,0 A72,72,0,0,1,0,72" stroke-width="0.8" opacity="0.65"/><path d="M-44,0 A44,44,0,0,1,0,44" stroke-width="0.8" opacity="0.7"/><path d="M-18,0 A18,18,0,0,1,0,18" stroke-width="0.9" opacity="0.75"/><line x1="-185" y1="0" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-179" y1="48" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-160" y1="93" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-131" y1="131" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-93" y1="160" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-48" y1="179" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="0" y1="185" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><path d="M-129,0 C-148,20 -148,50 -129,52 C-110,50 -110,20 -129,0 Z" opacity="0.3" fill="rgba(176,125,58,0.08)"/><path d="M-110,43 C-128,56 -122,84 -105,82 C-88,80 -88,54 -110,43 Z" opacity="0.3" fill="rgba(176,125,58,0.08)"/><path d="M-83,81 C-97,100 -85,124 -68,118 C-51,112 -58,86 -83,81 Z" opacity="0.3" fill="rgba(176,125,58,0.08)"/><path d="M-46,109 C-56,130 -38,150 -22,140 C-6,130 -18,108 -46,109 Z" opacity="0.3" fill="rgba(176,125,58,0.08)"/><path d="M-5,128 C-10,150 8,165 22,152 C36,139 20,120 -5,128 Z" opacity="0.3" fill="rgba(176,125,58,0.08)"/><circle cx="-140" cy="26" r="3" fill="#B07D3A" stroke="none" opacity="0.4"/><circle cx="-117" cy="68" r="3" fill="#B07D3A" stroke="none" opacity="0.4"/><circle cx="-82" cy="100" r="3" fill="#B07D3A" stroke="none" opacity="0.4"/><circle cx="-41" cy="122" r="3" fill="#B07D3A" stroke="none" opacity="0.4"/><circle cx="0" cy="135" r="3" fill="#B07D3A" stroke="none" opacity="0.4"/></g></svg></div>
+  <div class="corner-arc bl" aria-hidden="true"><svg viewBox="0 0 200 200" fill="none" stroke="#B07D3A" xmlns="http://www.w3.org/2000/svg"><g transform="translate(200,0)"><path d="M-185,0 A185,185,0,0,1,0,185" stroke-width="0.6" opacity="0.45"/><path d="M-157,0 A157,157,0,0,1,0,157" stroke-width="0.6" opacity="0.5"/><path d="M-128,0 A128,128,0,0,1,0,128" stroke-width="0.7" opacity="0.55"/><path d="M-100,0 A100,100,0,0,1,0,100" stroke-width="0.7" opacity="0.6"/><path d="M-72,0 A72,72,0,0,1,0,72" stroke-width="0.8" opacity="0.65"/><path d="M-44,0 A44,44,0,0,1,0,44" stroke-width="0.8" opacity="0.7"/><path d="M-18,0 A18,18,0,0,1,0,18" stroke-width="0.9" opacity="0.75"/><line x1="-185" y1="0" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-179" y1="48" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-160" y1="93" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-131" y1="131" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-93" y1="160" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-48" y1="179" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="0" y1="185" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/></g></svg></div>
+
   <div class="container">
     <!-- Header + Story -->
     <div class="split-layout" style="margin-bottom:64px">
       <div class="story-text reveal">
-        <span class="section-eyebrow">Family</span>
+        <span class="section-eyebrow lagnalu-eyebrow">Family</span>
         <h2 class="section-title">Born in Pune.<br><em>Built in Panvel.</em></h2>
         <blockquote class="story-quote">"Family comes first. Always. Everything else gets built around that."</blockquote>
         <p class="story-para">Close-knit nuclear family of four, from Panvel, Maharashtra. Both parents are engineering graduates from top government colleges — COEP and GEC Aurangabad. The household is intellectually rigorous and genuinely warm. They travel together. They argue about ideas. They show up for each other.</p>
@@ -1755,10 +1915,31 @@ body { animation: bodyFadeIn .5s ease forwards }
   </div>
 </section>
 
+<!-- Lagnalu divider between Family and Partner -->
+<div class="lagnalu-divider" aria-hidden="true">
+  <div class="lagnalu-divider-line"></div>
+  <svg viewBox="0 0 72 28" fill="none" stroke="#B07D3A" xmlns="http://www.w3.org/2000/svg">
+    <path d="M36,2 L42,14 L36,26 L30,14 Z" stroke-width="0.9"/>
+    <circle cx="36" cy="14" r="3.5" stroke-width="0.7"/>
+    <circle cx="36" cy="14" r="1.5" fill="#B07D3A" stroke="none"/>
+    <line x1="28" y1="14" x2="6" y2="14" stroke-width="0.6"/>
+    <path d="M10,11 L5,14 L10,17" stroke-width="0.6"/>
+    <line x1="44" y1="14" x2="66" y2="14" stroke-width="0.6"/>
+    <path d="M62,11 L67,14 L62,17" stroke-width="0.6"/>
+    <path d="M31,9 C33,5 39,5 41,9" stroke-width="0.6"/>
+    <path d="M31,19 C33,23 39,23 41,19" stroke-width="0.6"/>
+  </svg>
+  <div class="lagnalu-divider-line r"></div>
+</div>
+
 <!-- ─── ⑩ PARTNER VISION ─── -->
 <section id="partner">
+  <!-- Corner quarter-mandala arcs -->
+  <div class="corner-arc tr" aria-hidden="true"><svg viewBox="0 0 200 200" fill="none" stroke="#B07D3A" xmlns="http://www.w3.org/2000/svg"><g transform="translate(200,0)"><path d="M-185,0 A185,185,0,0,1,0,185" stroke-width="0.6" opacity="0.45"/><path d="M-157,0 A157,157,0,0,1,0,157" stroke-width="0.6" opacity="0.5"/><path d="M-128,0 A128,128,0,0,1,0,128" stroke-width="0.7" opacity="0.55"/><path d="M-100,0 A100,100,0,0,1,0,100" stroke-width="0.7" opacity="0.6"/><path d="M-72,0 A72,72,0,0,1,0,72" stroke-width="0.8" opacity="0.65"/><path d="M-44,0 A44,44,0,0,1,0,44" stroke-width="0.8" opacity="0.7"/><path d="M-18,0 A18,18,0,0,1,0,18" stroke-width="0.9" opacity="0.75"/><line x1="-185" y1="0" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-179" y1="48" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-160" y1="93" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-131" y1="131" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-93" y1="160" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-48" y1="179" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="0" y1="185" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/></g></svg></div>
+  <div class="corner-arc bl" aria-hidden="true"><svg viewBox="0 0 200 200" fill="none" stroke="#B07D3A" xmlns="http://www.w3.org/2000/svg"><g transform="translate(200,0)"><path d="M-185,0 A185,185,0,0,1,0,185" stroke-width="0.6" opacity="0.45"/><path d="M-157,0 A157,157,0,0,1,0,157" stroke-width="0.6" opacity="0.5"/><path d="M-128,0 A128,128,0,0,1,0,128" stroke-width="0.7" opacity="0.55"/><path d="M-100,0 A100,100,0,0,1,0,100" stroke-width="0.7" opacity="0.6"/><path d="M-72,0 A72,72,0,0,1,0,72" stroke-width="0.8" opacity="0.65"/><path d="M-44,0 A44,44,0,0,1,0,44" stroke-width="0.8" opacity="0.7"/><path d="M-18,0 A18,18,0,0,1,0,18" stroke-width="0.9" opacity="0.75"/><line x1="-185" y1="0" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-179" y1="48" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-160" y1="93" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-131" y1="131" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-93" y1="160" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-48" y1="179" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="0" y1="185" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/></g></svg></div>
+
   <div class="partner-inner">
-    <span class="partner-eyebrow reveal">Looking For</span>
+    <span class="partner-eyebrow lagnalu-eyebrow reveal">Looking For</span>
     <h2 class="partner-title reveal delay-1">Not a checklist.<br><em>A person.</em></h2>
 
     <div class="partner-statements">
@@ -1861,10 +2042,38 @@ body { animation: bodyFadeIn .5s ease forwards }
   </div>
 </section>
 
+<!-- ② Lagnalu ornamental divider — whisper of Indian marriage context -->
+<div class="lagnalu-divider" aria-hidden="true">
+  <div class="lagnalu-divider-line"></div>
+  <svg viewBox="0 0 72 28" fill="none" stroke="#B07D3A" xmlns="http://www.w3.org/2000/svg">
+    <!-- Central diamond -->
+    <path d="M36,2 L42,14 L36,26 L30,14 Z" stroke-width="0.9"/>
+    <!-- Inner circle -->
+    <circle cx="36" cy="14" r="3.5" stroke-width="0.7"/>
+    <!-- Center dot -->
+    <circle cx="36" cy="14" r="1.5" fill="#B07D3A" stroke="none"/>
+    <!-- Left extending line + arrowhead -->
+    <line x1="28" y1="14" x2="6" y2="14" stroke-width="0.6"/>
+    <path d="M10,11 L5,14 L10,17" stroke-width="0.6" fill="none"/>
+    <!-- Right extending line + arrowhead -->
+    <line x1="44" y1="14" x2="66" y2="14" stroke-width="0.6"/>
+    <path d="M62,11 L67,14 L62,17" stroke-width="0.6" fill="none"/>
+    <!-- Top arch over diamond -->
+    <path d="M31,9 C33,5 39,5 41,9" stroke-width="0.6"/>
+    <!-- Bottom arch under diamond -->
+    <path d="M31,19 C33,23 39,23 41,19" stroke-width="0.6"/>
+  </svg>
+  <div class="lagnalu-divider-line r"></div>
+</div>
+
 <!-- ─── HOROSCOPE ─── -->
-<section id="horoscope" style="background:var(--cream-2);padding:72px 24px">
+<section id="horoscope" style="background:var(--cream-2);padding:72px 24px;position:relative;overflow:hidden">
+  <!-- Corner quarter-mandala arc -->
+  <div class="corner-arc tl" aria-hidden="true"><svg viewBox="0 0 200 200" fill="none" stroke="#B07D3A" xmlns="http://www.w3.org/2000/svg"><g transform="translate(200,0)"><path d="M-185,0 A185,185,0,0,1,0,185" stroke-width="0.6" opacity="0.45"/><path d="M-157,0 A157,157,0,0,1,0,157" stroke-width="0.6" opacity="0.5"/><path d="M-128,0 A128,128,0,0,1,0,128" stroke-width="0.7" opacity="0.55"/><path d="M-100,0 A100,100,0,0,1,0,100" stroke-width="0.7" opacity="0.6"/><path d="M-72,0 A72,72,0,0,1,0,72" stroke-width="0.8" opacity="0.65"/><path d="M-44,0 A44,44,0,0,1,0,44" stroke-width="0.8" opacity="0.7"/><path d="M-18,0 A18,18,0,0,1,0,18" stroke-width="0.9" opacity="0.75"/><line x1="-185" y1="0" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-179" y1="48" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-160" y1="93" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-131" y1="131" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-93" y1="160" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-48" y1="179" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="0" y1="185" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/></g></svg></div>
+  <div class="corner-arc bl" aria-hidden="true"><svg viewBox="0 0 200 200" fill="none" stroke="#B07D3A" xmlns="http://www.w3.org/2000/svg"><g transform="translate(200,0)"><path d="M-185,0 A185,185,0,0,1,0,185" stroke-width="0.6" opacity="0.45"/><path d="M-157,0 A157,157,0,0,1,0,157" stroke-width="0.6" opacity="0.5"/><path d="M-128,0 A128,128,0,0,1,0,128" stroke-width="0.7" opacity="0.55"/><path d="M-100,0 A100,100,0,0,1,0,100" stroke-width="0.7" opacity="0.6"/><path d="M-72,0 A72,72,0,0,1,0,72" stroke-width="0.8" opacity="0.65"/><path d="M-44,0 A44,44,0,0,1,0,44" stroke-width="0.8" opacity="0.7"/><path d="M-18,0 A18,18,0,0,1,0,18" stroke-width="0.9" opacity="0.75"/><line x1="-185" y1="0" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-179" y1="48" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-160" y1="93" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-131" y1="131" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-93" y1="160" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="-48" y1="179" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/><line x1="0" y1="185" x2="0" y2="0" stroke-width="0.35" opacity="0.3"/></g></svg></div>
+
   <div class="container-sm" style="text-align:center">
-    <span class="section-eyebrow reveal" style="display:block;text-align:center">For the Families</span>
+    <span class="section-eyebrow lagnalu-eyebrow reveal" style="display:block;text-align:center">For the Families</span>
     <h2 class="section-title reveal delay-1" style="text-align:center">Horoscope &<br><em>Verification</em></h2>
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:40px;max-width:600px;margin-left:auto;margin-right:auto">
       <div class="glance-card reveal delay-1"><div class="glance-icon">♉</div><div class="glance-value" style="font-size:1.3rem">Vrushabh</div><div class="glance-label">Rashi (Taurus)</div></div>
@@ -1887,6 +2096,8 @@ body { animation: bodyFadeIn .5s ease forwards }
 <!-- ─── FOOTER ─── -->
 <footer style="background:var(--ink);color:var(--cream);padding:48px 24px 80px;text-align:center">
   <div class="container-sm">
+    <!-- ③ Lagnalu benediction — barely visible, deeply felt -->
+    <p class="footer-lagnalu">॥ शुभ लग्न ॥</p>
     <p style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;margin-bottom:6px;color:var(--cream)">Ishan Kulkarni</p>
     <p style="font-size:.8rem;color:rgba(247,244,238,.4);margin-bottom:28px;letter-spacing:.06em">ANUROOP · MT15685 · PREMIUM PLUS</p>
     <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:24px;font-size:.8rem;color:rgba(247,244,238,.55);margin-bottom:28px">
