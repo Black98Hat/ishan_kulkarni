@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ishan Kulkarni · IIT Madras · Senior PM · MT15685</title>
+
+<!-- ─── WhatsApp / Open Graph Preview ───────────────────────────────────
+     ┌──────────────────────────────────────────────────────────────────┐
+     │  WHATSAPP PREVIEW IMAGE — UPDATE THIS BEFORE SHARING             │
+     │  1. Choose a landscape photo (1200 × 630px works best)           │
+     │  2. Save it as:  images/og_preview.jpg                           │
+     │  3. Replace the URL in og:image below with the absolute URL      │
+     │     e.g.  https://yourusername.github.io/reponame/images/og_preview.jpg │
+     │  The JS at the bottom of this file auto-completes the base URL.  │
+     └──────────────────────────────────────────────────────────────────┘ -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ishan Kulkarni · IIT Madras · Senior PM at Flipkart">
+<meta property="og:description" content="27 · Bengaluru · IIT Madras Dual Degree · CFA (All 3 Levels) · Senior PM · 50L+ · SCUBA diver, HYROX athlete, 11 countries. Anuroop Profile: MT15685">
+<meta property="og:image" content="https://raw.githubusercontent.com/Black98Hat/ishan_kulkarni/main/images/whatsapp_preview.png" id="og-image">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://github.com/Black98Hat/ishan_kulkarni/about_me" id="og-url">
+<meta property="og:site_name" content="Ishan Kulkarni">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ishan Kulkarni · IIT Madras · Senior PM">
+<meta name="twitter:description" content="27 · IIT Madras + CFA · Senior PM · SCUBA diver · 11 countries · MT15685">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Black98Hat/ishan_kulkarni/main/images/whatsapp_preview.png" id="tw-image">
+<meta name="description" content="Ishan Kulkarni — 27, IIT Madras, Senior PM at super.money (Flipkart), CFA all 3 levels, HYROX athlete, SCUBA diver. Anuroop MT15685.">
+<meta name="theme-color" content="#F7F4EE">
+
+<!-- ─── Google Fonts ─── -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════
+   DESIGN TOKENS
+══════════════════════════════════════════ */
+:root {
+  --cream:      #F7F4EE;
+  --cream-2:    #EDE9E0;
+  --cream-3:    #E2DDD4;
+  --ink:        #1A1614;
+  --ink-2:      #3D3830;
+  --ink-3:      #7A7369;
+  --ink-4:      #B0A99E;
+  --gold:       #B07D3A;
+  --gold-light: rgba(176,125,58,0.10);
+  --gold-mid:   rgba(176,125,58,0.22);
+  --white:      #FFFFFF;
+  --border:     rgba(26,22,20,0.08);
+  --border-2:   rgba(26,22,20,0.14);
+  --shadow:     0 2px 20px rgba(26,22,20,0.07);
+  --shadow-lg:  0 8px 48px rgba(26,22,20,0.12);
+  --r:          16px;
+  --r-sm:       10px;
+  --wa-green:   #25D366;
+  --ig-gradient: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+}
+
+/* ══════════════════════════════════════════
+   RESET + BASE
+══════════════════════════════════════════ */
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0 }
+html { scroll-behavior:smooth; font-size:16px; -webkit-text-size-adjust:100% }
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width:100%; height:auto; display:block }
+a { color:inherit; text-decoration:none }
+button { font-family:inherit; cursor:pointer; border:none; background:none }
+
+/* Page entry */
+body { animation: bodyFadeIn .5s ease forwards }
+@keyframes bodyFadeIn { from { opacity:0 } to { opacity:1 } }
+
+/* ══════════════════════════════════════════
+   CUSTOM CURSOR (desktop only)
+══════════════════════════════════════════ */
+@media (pointer:fine) {
+  body { cursor:none }
+  a, button { cursor:none }
+}
+#cursor {
+  position:fixed; top:0; left:0; z-index:9999;
+  width:10px; height:10px;
+  background:var(--ink);
+  border-radius:50%;
+  pointer-events:none;
+  transition:transform .15s ease, opacity .3s;
+  mix-blend-mode:multiply;
+  will-change:transform;
+  opacity:0;
+}
+#cursor.visible { opacity:1 }
+#cursor.expanded { transform:scale(4); opacity:.22 }
+
+/* ══════════════════════════════════════════
+   STICKY CTA BAR
+══════════════════════════════════════════ */
+#cta-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 999;
+  background: rgba(247,244,238,0.88);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-top: 1px solid var(--border-2);
+  padding: 10px 16px max(10px, env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transform: translateY(100%);
+  transition: transform .6s cubic-bezier(0.16,1,0.3,1);
+}
+#cta-bar.visible { transform:translateY(0) }
+
+.cta-btn {
+  display:flex; align-items:center; gap:7px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  white-space: nowrap;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.cta-btn:active { transform:scale(.96) }
+.cta-btn svg { width:16px; height:16px; flex-shrink:0 }
+
+.cta-wa { background:var(--wa-green); color:#fff }
+.cta-wa:hover { box-shadow:0 4px 16px rgba(37,211,102,.4) }
+
+.cta-call { background:var(--ink); color:#fff }
+.cta-call:hover { box-shadow:0 4px 16px rgba(26,22,20,.3) }
+
+.cta-ig { background:var(--ig-gradient); color:#fff }
+.cta-ig:hover { box-shadow:0 4px 16px rgba(188,24,136,.35) }
+
+#anuroop-pill {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--gold-light);
+  border: 1px solid var(--gold-mid);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--gold);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background .18s;
+}
+#anuroop-pill:hover { background:var(--gold-mid) }
+#anuroop-pill .copy-icon { width:13px; height:13px; opacity:.7 }
+#copy-toast {
+  position:fixed; bottom:72px; left:50%; transform:translateX(-50%) translateY(8px);
+  background:var(--ink); color:#fff;
+  padding:8px 18px; border-radius:999px;
+  font-size:.75rem; font-weight:500;
+  pointer-events:none;
+  opacity:0; transition:all .3s ease;
+  white-space:nowrap;
+  z-index:1000;
+}
+#copy-toast.show { opacity:1; transform:translateX(-50%) translateY(0) }
+
+/* ══════════════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════════════ */
+.reveal {
+  opacity:0;
+  transform:translateY(36px);
+  transition: opacity .75s ease, transform .75s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal.delay-1 { transition-delay:.1s }
+.reveal.delay-2 { transition-delay:.2s }
+.reveal.delay-3 { transition-delay:.3s }
+.reveal.delay-4 { transition-delay:.4s }
+.reveal.delay-5 { transition-delay:.5s }
+.reveal.visible { opacity:1; transform:translateY(0) }
+
+/* ══════════════════════════════════════════
+   SECTION BASE
+══════════════════════════════════════════ */
+.section { padding: 96px 24px }
+.container { max-width:1080px; margin:0 auto }
+.container-sm { max-width:720px; margin:0 auto }
+
+.section-eyebrow {
+  font-family:'Inter', sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.22em; text-transform:uppercase;
+  color:var(--gold);
+  display:block; margin-bottom:16px;
+}
+.section-title {
+  font-family:'Cormorant Garamond', serif;
+  font-size:clamp(2.4rem,6vw,4rem);
+  font-weight:500; line-height:1.08;
+  letter-spacing:-.02em;
+  color:var(--ink);
+  margin-bottom:20px;
+}
+.section-title em {
+  font-style:italic;
+  color:var(--gold);
+}
+.section-body {
+  font-size:1.05rem; line-height:1.75;
+  color:var(--ink-2);
+  max-width:580px;
+}
+
+/* ══════════════════════════════════════════
+   ① HERO
+══════════════════════════════════════════ */
+#hero {
+  min-height:100svh;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  position:relative; overflow:hidden;
+  padding: 80px 24px 120px;
+  text-align:center;
+  background: var(--cream);
+}
+/* Subtle grain overlay */
+#hero::before {
+  content:'';
+  position:absolute; inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events:none; opacity:.5;
+}
+/* Radial glow behind photo */
+#hero::after {
+  content:'';
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-60%);
+  width:600px; height:600px;
+  background:radial-gradient(circle, rgba(176,125,58,.08) 0%, transparent 70%);
+  pointer-events:none;
+}
+
+/* Floating nav */
+#hero-nav {
+  position:fixed; top:0; left:0; right:0;
+  z-index:500;
+  padding:0 24px;
+  height:56px;
+  display:flex; align-items:center; justify-content:space-between;
+  background:rgba(247,244,238,0);
+  transition:background .4s, box-shadow .4s;
+}
+#hero-nav.scrolled {
+  background:rgba(247,244,238,0.9);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  box-shadow:0 1px 0 var(--border);
+}
+.nav-name {
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.1rem; font-weight:500;
+  letter-spacing:.01em;
+  color:var(--ink);
+}
+.nav-badge {
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.12em; text-transform:uppercase;
+  color:var(--gold);
+  background:var(--gold-light);
+  border:1px solid var(--gold-mid);
+  padding:4px 12px; border-radius:999px;
+}
+
+/* Hero photo */
+.hero-photo-wrap {
+  position:relative;
+  width:clamp(160px,38vw,240px);
+  aspect-ratio:1;
+  margin:0 auto 40px;
+  opacity:0;
+  animation:heroPhotoIn 1s .2s cubic-bezier(0.16,1,0.3,1) forwards;
+}
+@keyframes heroPhotoIn {
+  from { opacity:0; transform:scale(.9) translateY(20px) }
+  to   { opacity:1; transform:scale(1) translateY(0) }
+}
+.hero-photo-ring {
+  position:absolute; inset:-8px;
+  border-radius:50%;
+  background:conic-gradient(from 0deg, var(--gold-mid), transparent 60%, var(--gold-mid));
+  animation:ringRotate 8s linear infinite;
+}
+@keyframes ringRotate { to { transform:rotate(360deg) } }
+.hero-photo-inner {
+  position:relative; z-index:1;
+  width:100%; height:100%;
+  border-radius:50%;
+  overflow:hidden;
+  box-shadow: 0 20px 60px rgba(26,22,20,.18);
+  border:4px solid var(--cream);
+}
+.hero-photo-inner img {
+  width:100%; height:100%;
+  object-fit:cover; object-position:center top;
+}
+
+/* Hero text */
+.hero-eyebrow {
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.25em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:12px;
+  opacity:0; animation:fadeUp .8s .5s ease forwards;
+}
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(20px) }
+  to   { opacity:1; transform:translateY(0) }
+}
+.hero-name {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3.2rem,12vw,7.5rem);
+  font-weight:400; line-height:.95;
+  letter-spacing:-.025em;
+  color:var(--ink);
+  margin-bottom:24px;
+  opacity:0; animation:fadeUp .9s .65s cubic-bezier(0.16,1,0.3,1) forwards;
+}
+.hero-tagline {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.15rem,3vw,1.55rem);
+  font-weight:300; font-style:italic;
+  color:var(--ink-3);
+  margin-bottom:36px;
+  opacity:0; animation:fadeUp .8s .85s ease forwards;
+}
+.hero-tags {
+  display:flex; flex-wrap:wrap;
+  justify-content:center; gap:8px;
+  margin-bottom:48px;
+  opacity:0; animation:fadeUp .8s 1.05s ease forwards;
+}
+.hero-tag {
+  display:inline-flex; align-items:center; gap:6px;
+  padding:7px 16px;
+  border-radius:999px;
+  border:1px solid var(--border-2);
+  background:var(--white);
+  font-size:.75rem; font-weight:600;
+  color:var(--ink-2);
+  letter-spacing:.02em;
+  box-shadow:0 2px 8px rgba(26,22,20,.05);
+}
+.hero-tag.gold {
+  background:var(--gold-light);
+  border-color:var(--gold-mid);
+  color:var(--gold);
+}
+
+.hero-scroll-hint {
+  position:absolute; bottom:36px; left:50%;
+  transform:translateX(-50%);
+  display:flex; flex-direction:column; align-items:center; gap:8px;
+  opacity:0; animation:fadeUp .8s 1.4s ease forwards;
+}
+.hero-scroll-hint span {
+  font-size:.62rem; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--ink-4);
+}
+.scroll-line {
+  width:1px; height:36px;
+  background:linear-gradient(to bottom, var(--ink-4), transparent);
+  animation:scrollPulse 2s ease-in-out infinite;
+}
+@keyframes scrollPulse {
+  0%,100% { opacity:.4; transform:scaleY(.9) }
+  50%      { opacity:1;  transform:scaleY(1.1) }
+}
+
+/* ══════════════════════════════════════════
+   ② AT A GLANCE — BENTO
+══════════════════════════════════════════ */
+#glance { background:var(--cream) }
+
+.bento {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:52px;
+}
+@media (min-width:768px) {
+  .bento { grid-template-columns:repeat(12,1fr); gap:12px }
+}
+
+/* Base tile */
+.btile {
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:28px 24px 24px;
+  display:flex; flex-direction:column; justify-content:flex-end;
+  box-shadow:var(--shadow);
+  transition:transform .3s cubic-bezier(.16,1,.3,1), box-shadow .3s;
+  position:relative; overflow:hidden;
+  min-height:140px;
+}
+.btile:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg) }
+.btile::before {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(135deg, transparent 60%, var(--gold-light) 100%);
+  pointer-events:none; opacity:0;
+  transition:opacity .3s;
+}
+.btile:hover::before { opacity:1 }
+
+/* Column spans */
+@media (min-width:768px) {
+  .btile-3  { grid-column:span 3 }
+  .btile-4  { grid-column:span 4 }
+  .btile-5  { grid-column:span 5 }
+  .btile-6  { grid-column:span 6 }
+  .btile-7  { grid-column:span 7 }
+  .btile-8  { grid-column:span 8 }
+}
+/* Mobile full-width for wide tiles */
+.btile-fw { grid-column:span 2 }
+@media (min-width:768px) { .btile-fw { grid-column:unset } }
+@media (max-width:767px) { .btile-trust { grid-column:span 2 } }
+/* Last bento tile (HYROX) — full width on mobile, no orphan */
+@media (max-width:767px) { .bento > .btile:last-child { grid-column: 1 / -1 } }
+
+/* Da Nang family photo — responsive aspect ratio */
+.da-nang-wrap {
+  border-radius: var(--r);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 3/2;   /* mobile: tall enough to show all 4 people */
+}
+@media (min-width:768px) {
+  .da-nang-wrap { aspect-ratio: 16/7 }  /* desktop: cinematic wide banner */
+}
+.da-nang-wrap img {
+  width:100%; height:100%;
+  object-fit: cover;
+  object-position: center 55%;  /* faces at ~20-50%, ceiling at 0-15%, table at 55%+ */
+}
+@media (max-width:767px) {
+  .da-nang-wrap img { object-position: center 65% }  /* show slightly lower on mobile: more face, less ceiling */
+}
+
+/* Tile variants */
+.btile-dark {
+  background:var(--ink); border-color:transparent;
+}
+.btile-gold {
+  background:var(--gold-light); border-color:var(--gold-mid);
+}
+.btile-accent {
+  background:var(--cream-2); border-color:var(--border);
+}
+
+/* Big number typography */
+.btile-num {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.8rem,5vw,4.5rem);
+  font-weight:400; line-height:.9;
+  letter-spacing:-.03em; color:var(--ink);
+  margin-bottom:10px;
+}
+.btile-dark .btile-num { color:var(--cream) }
+.btile-gold .btile-num { color:var(--gold) }
+
+.btile-label {
+  font-size:.65rem; font-weight:700;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--ink-4);
+}
+.btile-dark .btile-label { color:rgba(247,244,238,.45) }
+.btile-gold .btile-label { color:var(--gold) }
+
+.btile-sub {
+  font-size:.8rem; color:var(--ink-3); margin-top:4px; line-height:1.4;
+}
+.btile-dark .btile-sub { color:rgba(247,244,238,.55) }
+
+/* Large feature tile (IIT) */
+.btile-hero {
+  background:var(--ink);
+  border-color:transparent;
+  min-height:180px;
+}
+.btile-hero .btile-num {
+  font-size:clamp(3.5rem,6vw,5.5rem);
+  color:var(--cream);
+}
+.btile-hero .btile-label { color:rgba(247,244,238,.45) }
+
+/* Trust tile special */
+.btile-trust {
+  background:linear-gradient(135deg, #1A1614 0%, #2d2820 100%);
+  border-color:transparent;
+}
+.btile-trust-row {
+  display:flex; align-items:center; gap:10px; margin-bottom:4px;
+}
+.btile-trust-dot {
+  width:8px; height:8px; border-radius:50%;
+  background:#22c55e; flex-shrink:0;
+  box-shadow:0 0 8px rgba(34,197,94,.6);
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity:1; transform:scale(1) }
+  50%      { opacity:.7; transform:scale(1.3) }
+}
+
+/* Glance card compatibility (used in horoscope section) */
+.glance-card {
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:24px 20px;
+  display:flex; flex-direction:column; gap:8px;
+  box-shadow:var(--shadow);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.glance-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-lg) }
+.glance-icon { font-size:1.4rem; line-height:1 }
+.glance-value {
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.85rem; font-weight:500;
+  line-height:1; letter-spacing:-.02em; color:var(--ink);
+}
+.glance-label { font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-4) }
+
+/* ══════════════════════════════════════════
+   ③ STORY: ORIGINS
+══════════════════════════════════════════ */
+#origins { background:var(--cream-2) }
+
+.split-layout {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:48px; align-items:center;
+}
+@media (min-width:768px) {
+  .split-layout { grid-template-columns:1fr 1fr; gap:80px }
+  .split-layout.reverse { direction:rtl }
+  .split-layout.reverse > * { direction:ltr }
+}
+
+.story-image-wrap {
+  position:relative;
+  border-radius:var(--r);
+  overflow:hidden;
+  aspect-ratio:4/5;
+  box-shadow:var(--shadow-lg);
+}
+.story-image-wrap img {
+  width:100%; height:100%;
+  object-fit:cover;
+  transition:transform .6s ease;
+}
+.story-image-wrap:hover img { transform:scale(1.04) }
+.story-image-label {
+  position:absolute; bottom:16px; left:16px;
+  background:rgba(247,244,238,.92);
+  backdrop-filter:blur(10px);
+  padding:6px 14px; border-radius:999px;
+  font-size:.72rem; font-weight:600;
+  color:var(--ink); letter-spacing:.05em;
+}
+
+.story-text { }
+.story-quote {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.3rem,3vw,1.7rem);
+  font-weight:400; font-style:italic;
+  line-height:1.5; color:var(--ink);
+  margin-bottom:24px;
+  border-left:3px solid var(--gold);
+  padding-left:20px;
+}
+.story-para {
+  font-size:1.0rem; line-height:1.8;
+  color:var(--ink-2); margin-bottom:16px;
+}
+.family-row {
+  display:flex; flex-direction:column; gap:12px;
+  margin-top:32px;
+}
+.family-item {
+  display:flex; align-items:flex-start; gap:12px;
+  padding:16px; border-radius:var(--r-sm);
+  background:var(--white);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+.family-avatar {
+  width:42px; height:42px;
+  border-radius:50%;
+  background:var(--gold-light);
+  border:1px solid var(--gold-mid);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.1rem; flex-shrink:0;
+}
+.family-info { }
+.family-name { font-weight:600; font-size:.9rem; color:var(--ink) }
+.family-role { font-size:.78rem; color:var(--ink-3); margin-top:2px }
+
+/* ══════════════════════════════════════════
+   ④ STORY: BUILDER
+══════════════════════════════════════════ */
+#builder { background:var(--cream) }
+
+.builder-timeline {
+  display:flex; flex-direction:column; gap:0;
+  margin-top:48px; position:relative;
+}
+.builder-timeline::before {
+  content:''; position:absolute;
+  left:20px; top:0; bottom:0;
+  width:1px; background:var(--border-2);
+}
+.timeline-item {
+  display:flex; gap:24px;
+  padding-bottom:40px;
+  position:relative;
+}
+.timeline-dot {
+  width:42px; height:42px;
+  border-radius:50%;
+  background:var(--white);
+  border:1px solid var(--border-2);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.1rem; flex-shrink:0;
+  position:relative; z-index:1;
+  box-shadow:var(--shadow);
+}
+.timeline-content {
+  padding-top:8px; flex:1;
+}
+.timeline-year {
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.15em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:4px;
+}
+.timeline-title {
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.5rem; font-weight:500;
+  color:var(--ink); margin-bottom:6px;
+}
+.timeline-body {
+  font-size:.9rem; line-height:1.7;
+  color:var(--ink-3);
+}
+
+.builder-img-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px; margin-top:48px;
+  align-items:start;
+}
+.builder-img-grid img {
+  border-radius:var(--r);
+  width:100%;
+  object-fit:cover;
+  box-shadow:var(--shadow);
+}
+.builder-img-grid img:first-child {
+  aspect-ratio:3/4;
+  object-position:top center;
+}
+.builder-img-grid img:last-child {
+  aspect-ratio:4/5;
+  object-position:center center;
+}
+
+/* ══════════════════════════════════════════
+   ⑤ PHILOSOPHY — DARK BREAK SECTION
+══════════════════════════════════════════ */
+#philosophy {
+  background:var(--ink);
+  color:var(--cream);
+  padding:96px 24px;
+  position:relative; overflow:hidden;
+}
+#philosophy::before {
+  content:'';
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 50%, rgba(176,125,58,.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 80% 30%, rgba(176,125,58,.04) 0%, transparent 60%);
+  pointer-events:none;
+}
+.philosophy-inner { max-width:860px; margin:0 auto; position:relative; z-index:1 }
+.philosophy-eyebrow {
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.22em; text-transform:uppercase;
+  color:var(--gold); display:block; margin-bottom:48px; text-align:center;
+}
+/* 3-act story layout */
+.philosophy-acts {
+  display:grid; grid-template-columns:1fr;
+  gap:0;
+}
+@media (min-width:768px) {
+  .philosophy-acts { grid-template-columns:1fr 1fr 1fr; gap:0 }
+}
+.philosophy-act {
+  padding:32px 28px;
+  border-top:1px solid rgba(247,244,238,.08);
+  position:relative;
+}
+@media (min-width:768px) {
+  .philosophy-act { border-top:none; border-left:1px solid rgba(247,244,238,.08) }
+  .philosophy-act:first-child { border-left:none }
+}
+.philosophy-act-number {
+  font-family:'Cormorant Garamond',serif;
+  font-size:5rem; font-weight:300; line-height:1;
+  color:rgba(247,244,238,.05);
+  position:absolute; top:20px; right:24px;
+}
+.philosophy-act-label {
+  font-size:.62rem; font-weight:700;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:16px; display:block;
+}
+.philosophy-act-headline {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.5rem,3vw,2rem);
+  font-weight:400; font-style:italic;
+  line-height:1.2; color:var(--cream);
+  margin-bottom:16px;
+}
+.philosophy-act-body {
+  font-size:.88rem; line-height:1.8;
+  color:rgba(247,244,238,.6);
+}
+.philosophy-synthesis {
+  margin-top:64px;
+  padding:40px;
+  border:1px solid rgba(176,125,58,.2);
+  border-radius:var(--r);
+  background:rgba(176,125,58,.04);
+  text-align:center;
+}
+.philosophy-synthesis-quote {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.5rem,4vw,2.4rem);
+  font-weight:300; font-style:italic;
+  line-height:1.45; color:var(--cream);
+}
+.philosophy-synthesis-quote strong {
+  font-weight:500; font-style:normal;
+  color:var(--gold);
+}
+
+/* ══════════════════════════════════════════
+   ⑥ ATHLETE & EXPLORER — CINEMATIC ROWS
+══════════════════════════════════════════ */
+#athlete { background:var(--cream-2); padding-bottom:0 }
+#athlete .container { padding-bottom:0 }
+
+.athlete-rows {
+  margin-top:56px;
+  border-radius:var(--r);
+  overflow:hidden;
+  box-shadow:0 24px 80px rgba(26,22,20,.18);
+  /* Bleed slightly on mobile for edge-to-edge feel */
+}
+@media (max-width:767px) {
+  .athlete-rows {
+    border-radius:0;
+    margin-left:-18px; margin-right:-18px;
+  }
+}
+
+.arow {
+  display:grid;
+  grid-template-columns:1fr;
+  overflow:hidden;
+}
+@media (min-width:768px) {
+  .arow { grid-template-columns:58% 42%; min-height:480px }
+  .arow.rev { grid-template-columns:42% 58% }
+  .arow.rev .arow-img  { order:2 }
+  .arow.rev .arow-text { order:1 }
+}
+
+.arow-img {
+  position:relative; overflow:hidden;
+  aspect-ratio:16/10;
+}
+@media (min-width:768px) { .arow-img { aspect-ratio:unset } }
+.arow-img img {
+  width:100%; height:100%;
+  object-fit:cover;
+  transition:transform .9s cubic-bezier(0.16,1,0.3,1), filter .6s ease;
+  filter:brightness(.88) saturate(1.15);
+}
+.arow:hover .arow-img img { transform:scale(1.06); filter:brightness(.78) saturate(1.25) }
+
+/* Subtle image number overlay */
+.arow-num {
+  position:absolute; bottom:16px; right:20px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:5rem; font-weight:300; line-height:1;
+  color:rgba(255,255,255,.12);
+  pointer-events:none;
+  user-select:none;
+}
+
+.arow-text {
+  padding:40px 36px;
+  display:flex; flex-direction:column; justify-content:center;
+  background:var(--ink); color:var(--cream);
+  position:relative;
+}
+.arow.cream .arow-text {
+  background:var(--white); color:var(--ink);
+}
+@media (min-width:768px) { .arow-text { padding:52px 48px } }
+
+.arow-sport {
+  font-size:.6rem; font-weight:700;
+  letter-spacing:.22em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:12px; display:block;
+}
+.arow-title {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.2rem,4vw,3.2rem); font-weight:400;
+  line-height:1.05; margin-bottom:20px;
+  color:var(--cream);
+}
+.arow.cream .arow-title { color:var(--ink) }
+
+.arow-desc {
+  font-size:.9rem; line-height:1.75;
+  color:rgba(247,244,238,.72); margin-bottom:24px;
+}
+.arow.cream .arow-desc { color:var(--ink-3) }
+
+.arow-chips {
+  display:flex; flex-wrap:wrap; gap:7px;
+}
+.arow-chip {
+  display:inline-flex; align-items:center; gap:4px;
+  padding:6px 12px;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  font-size:.7rem; font-weight:600;
+  color:rgba(255,255,255,.88);
+  letter-spacing:.03em;
+  transition:background .2s;
+}
+.arow:hover .arow-chip { background:rgba(255,255,255,.15) }
+.arow.cream .arow-chip {
+  background:var(--cream-2);
+  border-color:var(--border-2);
+  color:var(--ink-2);
+}
+.arow.cream:hover .arow-chip { background:var(--cream-3) }
+
+/* ══════════════════════════════════════════
+   ⑦ TRAVEL
+══════════════════════════════════════════ */
+#travel { background:var(--cream) }
+
+.travel-intro-row {
+  display:grid; grid-template-columns:1fr;
+  gap:40px; align-items:center; margin-bottom:60px;
+}
+@media (min-width:768px) { .travel-intro-row { grid-template-columns:1fr 1fr } }
+
+.travel-stat {
+  text-align:center;
+}
+.travel-num {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(5rem,18vw,9rem);
+  font-weight:300; line-height:.9;
+  color:var(--ink); letter-spacing:-.04em;
+}
+.travel-num-label {
+  font-size:.75rem; font-weight:700;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:var(--ink-3); margin-top:8px;
+}
+
+.countries-list {
+  display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;
+}
+.country-tag {
+  display:inline-flex; align-items:center; gap:5px;
+  padding:6px 12px;
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:999px;
+  font-size:.75rem; font-weight:500;
+  color:var(--ink-2);
+  box-shadow:var(--shadow);
+}
+
+.travel-mosaic {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:auto auto;
+  gap:12px;
+}
+@media (min-width:640px) {
+  .travel-mosaic { grid-template-columns:repeat(4,1fr) }
+}
+.travel-photo {
+  border-radius:var(--r-sm);
+  overflow:hidden;
+  aspect-ratio:1;
+  box-shadow:var(--shadow);
+}
+.travel-photo.tall {
+  grid-row:span 2;
+  aspect-ratio:unset;
+}
+.travel-photo img {
+  width:100%; height:100%;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
+.travel-photo:hover img { transform:scale(1.05) }
+
+/* ══════════════════════════════════════════
+   ⑧ LIFESTYLE
+══════════════════════════════════════════ */
+#lifestyle { background:var(--cream-2) }
+
+.lifestyle-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px; margin-top:48px;
+}
+@media (min-width:768px) { .lifestyle-grid { grid-template-columns:repeat(4,1fr) } }
+
+.lifestyle-card {
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:24px 20px;
+  display:flex; flex-direction:column; gap:10px;
+  box-shadow:var(--shadow);
+  transition:transform .25s;
+}
+.lifestyle-card:hover { transform:translateY(-3px) }
+.lifestyle-emoji { font-size:1.8rem }
+.lifestyle-name {
+  font-weight:600; font-size:.9rem; color:var(--ink);
+}
+.lifestyle-detail {
+  font-size:.78rem; color:var(--ink-3); line-height:1.5;
+}
+
+.lifestyle-photo-strip {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px; margin-top:12px;
+}
+@media (min-width:640px) { .lifestyle-photo-strip { grid-template-columns:repeat(3,1fr) } }
+.lifestyle-photo-strip img {
+  border-radius:var(--r);
+  aspect-ratio:4/3;
+  width:100%; height:auto;
+  object-fit:cover;
+  box-shadow:var(--shadow);
+}
+
+/* ══════════════════════════════════════════
+   ⑨ FAMILY
+══════════════════════════════════════════ */
+#family { background:var(--cream) }
+
+.family-header {
+  max-width:580px; margin-bottom:60px;
+}
+.family-photo-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px; margin-bottom:48px;
+}
+@media (min-width:640px) { .family-photo-grid { grid-template-columns:1fr 1fr 1fr } }
+
+.family-photo-item {
+  border-radius:var(--r);
+  overflow:hidden;
+  aspect-ratio:3/4;
+  box-shadow:var(--shadow-lg);
+  position:relative;
+}
+.family-photo-item img {
+  width:100%; height:100%;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
+.family-photo-item:hover img { transform:scale(1.04) }
+.family-photo-item.wide {
+  grid-column:span 2;
+  aspect-ratio:16/9;
+}
+@media (min-width:640px) {
+  .family-photo-item.wide { grid-column:span 1; aspect-ratio:3/4 }
+}
+
+.family-members-grid {
+  display:grid; grid-template-columns:1fr;
+  gap:16px;
+}
+@media (min-width:640px) { .family-members-grid { grid-template-columns:repeat(3,1fr) } }
+
+.family-member-card {
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:24px 20px;
+  box-shadow:var(--shadow);
+}
+.member-icon {
+  width:44px; height:44px;
+  border-radius:50%;
+  background:var(--gold-light);
+  border:1px solid var(--gold-mid);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.2rem; margin-bottom:16px;
+}
+.member-name { font-weight:700; font-size:.95rem; color:var(--ink); margin-bottom:4px }
+.member-role { font-size:.75rem; font-weight:600; color:var(--gold); letter-spacing:.05em; margin-bottom:8px }
+.member-detail { font-size:.82rem; color:var(--ink-3); line-height:1.6 }
+
+.family-note {
+  margin-top:48px;
+  padding:32px;
+  background:var(--cream-2);
+  border-radius:var(--r);
+  border:1px solid var(--border);
+}
+.family-note p {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.2rem,3vw,1.6rem);
+  font-weight:400; font-style:italic;
+  line-height:1.55; color:var(--ink-2);
+}
+
+/* ══════════════════════════════════════════
+   ⑩ PARTNER VISION
+══════════════════════════════════════════ */
+#partner {
+  background:var(--cream);
+  color:var(--ink);
+  padding:96px 24px;
+  overflow:hidden;
+  position:relative;
+}
+#partner::before {
+  content:'';
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 100% 60% at 50% 100%, rgba(176,125,58,.05) 0%, transparent 70%);
+  pointer-events:none;
+}
+.partner-inner { max-width:960px; margin:0 auto; position:relative; z-index:1 }
+.partner-eyebrow {
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.22em; text-transform:uppercase;
+  color:var(--gold); display:block; margin-bottom:28px;
+}
+.partner-title {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.4rem,7vw,5rem);
+  font-weight:400; line-height:1.02;
+  color:var(--ink); margin-bottom:64px;
+  max-width:700px;
+}
+.partner-title em { font-style:italic; color:var(--gold) }
+
+/* Big typographic statements */
+.partner-statements {
+  display:flex; flex-direction:column; gap:0;
+  margin-bottom:72px;
+}
+.partner-statement {
+  display:flex; align-items:flex-start; gap:24px;
+  padding:28px 0;
+  border-bottom:1px solid var(--border);
+}
+.partner-statement:first-child { border-top:1px solid var(--border) }
+.partner-stmt-num {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.5rem,6vw,4rem);
+  font-weight:300; color:var(--ink-4);
+  line-height:1; min-width:60px;
+  flex-shrink:0;
+}
+.partner-stmt-content { flex:1; padding-top:4px }
+.partner-stmt-label {
+  font-size:.62rem; font-weight:700;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:8px; display:block;
+}
+.partner-stmt-headline {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.4rem,3.5vw,2rem);
+  font-weight:400; color:var(--ink);
+  line-height:1.2; margin-bottom:8px;
+}
+.partner-stmt-body {
+  font-size:.88rem; color:var(--ink-3);
+  line-height:1.7; max-width:560px;
+}
+
+/* Commitment box */
+.partner-commit {
+  display:grid; grid-template-columns:1fr;
+  gap:16px;
+}
+@media (min-width:640px) { .partner-commit { grid-template-columns:1fr 1fr 1fr } }
+.partner-commit-item {
+  background:var(--ink);
+  color:var(--cream);
+  border-radius:var(--r);
+  padding:24px 20px;
+}
+.partner-commit-icon { font-size:1.4rem; margin-bottom:12px }
+.partner-commit-name {
+  font-weight:600; font-size:.9rem; color:var(--cream);
+  margin-bottom:6px;
+}
+.partner-commit-detail {
+  font-size:.8rem; color:rgba(247,244,238,.6);
+  line-height:1.6;
+}
+
+/* ══════════════════════════════════════════
+   ⑪ FINAL CTA SECTION
+══════════════════════════════════════════ */
+#contact {
+  background:var(--cream);
+  padding:96px 24px 160px; /* extra bottom for sticky bar */
+}
+.contact-inner { max-width:640px; margin:0 auto; text-align:center }
+.contact-photo {
+  width:100px; height:100px;
+  border-radius:50%;
+  overflow:hidden;
+  margin:0 auto 32px;
+  box-shadow:var(--shadow-lg);
+  border:3px solid var(--cream);
+  outline:1px solid var(--border-2);
+}
+.contact-photo img { width:100%; height:100%; object-fit:cover; object-position:top }
+.contact-title {
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2rem,6vw,3.5rem);
+  font-weight:400; line-height:1.1;
+  color:var(--ink); margin-bottom:16px;
+}
+.contact-sub {
+  font-size:1rem; color:var(--ink-3);
+  line-height:1.7; margin-bottom:48px;
+}
+
+.contact-actions {
+  display:flex; flex-direction:column; gap:12px;
+  align-items:center; margin-bottom:48px;
+}
+.contact-btn-primary {
+  display:inline-flex; align-items:center; gap:10px;
+  padding:16px 32px;
+  background:var(--wa-green); color:#fff;
+  border-radius:999px;
+  font-size:1rem; font-weight:600;
+  box-shadow:0 4px 24px rgba(37,211,102,.35);
+  transition:transform .2s, box-shadow .2s;
+}
+.contact-btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 32px rgba(37,211,102,.45) }
+.contact-btn-secondary {
+  display:inline-flex; align-items:center; gap:10px;
+  padding:14px 28px;
+  background:var(--white); color:var(--ink);
+  border-radius:999px; border:1px solid var(--border-2);
+  font-size:.9rem; font-weight:600;
+  box-shadow:var(--shadow);
+  transition:transform .2s;
+}
+.contact-btn-secondary:hover { transform:translateY(-2px) }
+
+.contact-divider {
+  width:40px; height:1px;
+  background:var(--border-2);
+  margin:0 auto 32px;
+}
+.anuroop-cta-box {
+  background:var(--gold-light);
+  border:1px solid var(--gold-mid);
+  border-radius:var(--r);
+  padding:24px 28px;
+  margin-bottom:32px;
+}
+.anuroop-label {
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--gold); margin-bottom:10px;
+  display:block;
+}
+.anuroop-id {
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.2rem; font-weight:500;
+  letter-spacing:.05em; color:var(--ink);
+  margin-bottom:12px;
+}
+.anuroop-copy-btn {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:10px 22px;
+  background:var(--gold); color:#fff;
+  border-radius:999px;
+  font-size:.8rem; font-weight:600;
+  transition:opacity .2s;
+}
+.anuroop-copy-btn:hover { opacity:.88 }
+
+.social-links {
+  display:flex; justify-content:center; gap:16px;
+}
+.social-link {
+  display:flex; align-items:center; gap:7px;
+  padding:9px 18px;
+  border:1px solid var(--border-2);
+  border-radius:999px;
+  font-size:.78rem; font-weight:500; color:var(--ink-2);
+  background:var(--white);
+  transition:transform .18s;
+}
+.social-link:hover { transform:translateY(-2px) }
+
+/* ══════════════════════════════════════════
+   MISC / UTILITIES
+══════════════════════════════════════════ */
+.verified-badge {
+  display:inline-flex; align-items:center; gap:5px;
+  padding:4px 10px;
+  background:rgba(34,197,94,.1);
+  border:1px solid rgba(34,197,94,.25);
+  border-radius:999px;
+  font-size:.68rem; font-weight:600;
+  color:rgb(21,128,61);
+  letter-spacing:.04em;
+}
+
+/* ══════════════════════════════════════════
+   MOBILE RESPONSIVENESS FINE-TUNING
+══════════════════════════════════════════ */
+@media (max-width:480px) {
+  .section { padding:72px 18px }
+  .cta-btn span { display:none }
+  #cta-bar { gap:6px }
+  .cta-btn { padding:10px 14px }
+  .travel-mosaic { grid-template-columns:repeat(2,1fr) }
+  .travel-photo.tall { grid-row:span 1; aspect-ratio:1 }
+}
+@media (max-width:360px) {
+  .hero-name { font-size:2.8rem }
+  #anuroop-pill { display:none }
+}
+
+/* ── Noscript fallback ── */
+.no-js .reveal { opacity:1; transform:none }
+
+/* ── Selection color ── */
+::selection { background:var(--gold-mid); color:var(--ink) }
+::-webkit-selection { background:var(--gold-mid); color:var(--ink) }
+
+</style>
+</head>
+<body>
+
+<!-- ─── CUSTOM CURSOR ─── -->
+<div id="cursor"></div>
+
+<!-- ─── COPY TOAST ─── -->
+<div id="copy-toast">MT15685 copied!</div>
+
+<!-- ─── STICKY CTA BAR ─── -->
+<div id="cta-bar">
+  <a href="https://wa.me/917718849191?text=Hi%20Ishan%2C%20I%20saw%20your%20profile%20and%20would%20love%20to%20connect." class="cta-btn cta-wa" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span>WhatsApp Ishan</span>
+  </a>
+  <a href="tel:917738384870" class="cta-btn cta-call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l.62-.62a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    <span>Call Aai</span>
+  </a>
+  <a href="https://www.instagram.com/cold.monk/" class="cta-btn cta-ig" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    <span>@cold.monk</span>
+  </a>
+  <button id="anuroop-pill" onclick="copyAnuroop()">
+    <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+    MT15685
+  </button>
+</div>
+
+<!-- ─── ① HERO ─── -->
+<nav id="hero-nav">
+  <span class="nav-name">Ishan Kulkarni</span>
+  <span class="nav-badge">Anuroop · MT15685</span>
+</nav>
+
+<section id="hero">
+  <div class="hero-photo-wrap">
+    <div class="hero-photo-ring"></div>
+    <div class="hero-photo-inner">
+      <img src="images/profile_photo_paris.jpg" alt="Ishan Kulkarni" loading="eager">
+    </div>
+  </div>
+
+  <p class="hero-eyebrow">Senior Product Manager · Bengaluru</p>
+
+  <h1 class="hero-name">Ishan<br>Kulkarni</h1>
+
+  <p class="hero-tagline">Builder. Athlete. Explorer.<br><em style="font-style:normal;color:var(--gold);font-weight:500">IIT Madras × CFA × Fintech × 11 Countries.</em></p>
+
+  <div class="hero-tags">
+    <span class="hero-tag gold">🎓 IIT Madras</span>
+    <span class="hero-tag gold">📊 CFA · All 3 Levels</span>
+    <span class="hero-tag">🏢 Senior PM · super.money (Walmart)</span>
+    <span class="hero-tag">💰 ₹50L+</span>
+    <span class="hero-tag">✈️ 11 Countries</span>
+    <span class="hero-tag">🤿 SCUBA Certified</span>
+    <span class="hero-tag">🏃 HYROX Athlete</span>
+    <span class="hero-tag">27 yrs · 5'7"</span>
+    <span class="hero-tag verified-badge">✓ Anuroop Verified</span>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ─── ② AT A GLANCE ─── -->
+<section id="glance" class="section">
+  <div class="container">
+    <span class="section-eyebrow reveal">At a Glance</span>
+    <h2 class="section-title reveal delay-1">Everything that matters,<br><em>without the noise.</em></h2>
+
+    <div class="bento">
+
+      <!-- Row 1: IIT (hero, 5 cols) + CFA (4 cols) + Age (3 cols) -->
+      <div class="btile btile-hero btile-5 reveal delay-1">
+        <div class="btile-num">IIT</div>
+        <div class="btile-label">Madras</div>
+        <div class="btile-sub">B.Tech + M.Tech Dual Degree · Top 0.1%</div>
+      </div>
+      <div class="btile btile-gold btile-4 reveal delay-2">
+        <div class="btile-num">CFA</div>
+        <div class="btile-label">All 3 Levels Cleared</div>
+        <div class="btile-sub">Fewer than 1 in 5 who start finish all three</div>
+      </div>
+      <div class="btile btile-3 reveal delay-3">
+        <div class="btile-num">27</div>
+        <div class="btile-label">Years Old</div>
+        <div class="btile-sub">Born 4 Dec 1998 · Top 5% career trajectory</div>
+      </div>
+
+      <!-- Row 2: Sr PM (5 cols) + 50L+ (4 cols) + BLR (3 cols) -->
+      <div class="btile btile-dark btile-5 reveal delay-1">
+        <div class="btile-num" style="font-size:clamp(1.6rem,3vw,2.6rem);margin-bottom:6px;color:var(--cream)">Senior PM</div>
+        <div class="btile-label">super.money (Walmart)</div>
+        <div class="btile-sub">4 years 10 months · Bengaluru · Income Verified</div>
+      </div>
+      <div class="btile btile-accent btile-4 reveal delay-2">
+        <div class="btile-num">₹50L+</div>
+        <div class="btile-label">Per Annum · Verified</div>
+        <div class="btile-sub">Income document verified on Anuroop</div>
+      </div>
+      <div class="btile btile-3 reveal delay-3">
+        <div class="btile-num" style="font-size:clamp(1.8rem,3vw,2.8rem)">Current home: BLR</div>
+        <div class="btile-label">Bengaluru · Lives</div>
+        <div class="btile-sub">Indiranagar · 2BHK</div>
+      </div>
+
+      <!-- Row 3: Trust tile (8 cols) + HYROX (4 cols) -->
+      <div class="btile btile-trust btile-8 reveal delay-1" style="min-height:120px">
+        <div class="btile-trust-row">
+          <div class="btile-trust-dot"></div>
+          <div style="font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(247,244,238,.4)">Live on Anuroop</div>
+        </div>
+        <div class="btile-num" style="font-size:clamp(3rem,5vw,4.5rem);color:var(--cream)">97%</div>
+        <div class="btile-label" style="color:rgba(247,244,238,.4)">Response Rate · Self + Family-Managed · Last Active Minutes Ago · Less than 1-Day Response Time</div>
+      </div>
+      <div class="btile btile-dark btile-4 reveal delay-2" style="min-height:120px">
+        <div class="btile-num" style="font-size:clamp(1.4rem,2.5vw,2rem);margin-bottom:6px;color:var(--cream)">HYROX · SCUBA · Surf · Skydive · Run</div>
+        <div class="btile-label">Athlete & Explorer</div>
+        <div class="btile-sub">11 countries · Open Water certified · Half Marathon finisher · Top 20%ile athlete</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── ③ BUILDER ─── -->
+<section id="builder" class="section">
+  <div class="container">
+    <div class="split-layout reverse">
+      <div class="reveal">
+        <span class="section-eyebrow">The Builder</span>
+        <h2 class="section-title">Not just smart.<br><em>Strategic.</em></h2>
+        <p class="section-body">IIT Madras taught him to think rigorously. CFA (all three levels, completed) taught him to evaluate anything financially. Flipkart taught him to ship products that work at scale. At 27, he is a Senior Product Manager at super.money — one of India's most watched fintech products.</p>
+        <p class="section-body" style="margin-top:16px">His hobby is building AI applications. Not as a side hustle. Because he genuinely finds it interesting. He reads philosophy, behavioral economics, and product design with the same intensity. The kind of person who connects ideas from wildly different fields and actually does something with the connection.</p>
+      </div>
+
+      <div class="reveal delay-2">
+        <div class="builder-timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">🎓</div>
+            <div class="timeline-content">
+              <div class="timeline-year">2016–2021</div>
+              <div class="timeline-title">IIT Madras</div>
+              <div class="timeline-body">B.Tech + M.Tech Dual Degree. Engineering. Top 0.1% of India's academic pipeline.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">📊</div>
+            <div class="timeline-content">
+              <div class="timeline-year">2020–2023</div>
+              <div class="timeline-title">CFA · All 3 Levels</div>
+              <div class="timeline-body">Cleared all three levels. Fewer than 20% who start finish all three. IIT + CFA together at 27 is statistically rare.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🚀</div>
+            <div class="timeline-content">
+              <div class="timeline-year">2021–Present</div>
+              <div class="timeline-title">CRED → super.money</div>
+              <div class="timeline-body">Joined CRED. Moved into super.money fintech (Walmart-owned). Now Senior PM. 4 years 10 months of consistent, compounding impact.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot">🤖</div>
+            <div class="timeline-content">
+              <div class="timeline-year">Now</div>
+              <div class="timeline-title">Building AI Apps · For fun</div>
+              <div class="timeline-body">His actual hobby in 2026. Not for a resume. Because he's curious about what's next and incapable of staying still intellectually. Including this.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="builder-img-grid reveal">
+      <img src="images/professional.jpg" alt="Ishan professional" loading="lazy">
+      <img src="images/exploring_as_copilot.jpg" alt="Exploring new worlds" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ─── ⑤ PHILOSOPHY ─── -->
+<section id="philosophy">
+  <div class="philosophy-inner">
+    <span class="philosophy-eyebrow reveal">How He Thinks</span>
+
+    <div class="philosophy-acts reveal delay-1">
+      <div class="philosophy-act">
+        <span class="philosophy-act-number">I</span>
+        <span class="philosophy-act-label">The IIT Years</span>
+        <h3 class="philosophy-act-headline">First principles, or nothing.</h3>
+        <p class="philosophy-act-body">IIT Madras is not just a credential. It's a way of thinking. You learn to decompose every problem until you're left with something you actually understand. Then you build back up. He never stopped doing this — at work, in life, in relationships.</p>
+      </div>
+      <div class="philosophy-act">
+        <span class="philosophy-act-number">II</span>
+        <span class="philosophy-act-label">The Counterintuitive Part</span>
+        <h3 class="philosophy-act-headline">He meditates. Every morning.</h3>
+        <p class="philosophy-act-body">Most high-performers optimize for output. He optimizes for clarity first. Daily meditation keeps him honest with himself — about what he actually wants, what he's actually feeling, and whether he's acting with integrity or just momentum.</p>
+      </div>
+      <div class="philosophy-act">
+        <span class="philosophy-act-number">III</span>
+        <span class="philosophy-act-label">The Synthesis</span>
+        <h3 class="philosophy-act-headline">Act decisively. Reflect deeply.</h3>
+        <p class="philosophy-act-body">Nassim Taleb and Marcus Aurelius sit on the same shelf. He reads philosophy the way engineers read textbooks — looking for transferable principles. The result is someone who builds fast, thinks slow, and rarely confuses urgency with importance.</p>
+      </div>
+    </div>
+
+    <div class="philosophy-synthesis reveal delay-3">
+      <p class="philosophy-synthesis-quote">
+        "Most builders don't meditate.<br>
+        Most meditators don't build.<br>
+        <strong>He does both.</strong>"
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ⑥ ATHLETE & EXPLORER ─── -->
+<section id="athlete" class="section">
+  <div class="container">
+    <span class="section-eyebrow reveal">Athlete & Explorer</span>
+    <h2 class="section-title reveal delay-1">He doesn't just talk<br><em>about living fully.</em></h2>
+    <p class="section-body reveal delay-2">HYROX. SCUBA. Surfing two coasts. Skydiving at 15,000 feet. Half marathon finisher. This is not an interest list. It's a pattern — someone who consistently seeks experiences that are physically demanding, technically skilled, and deeply immersive.</p>
+  </div>
+
+  <div class="athlete-rows reveal delay-3">
+
+    <!-- 1. HYROX — image left, dark text right -->
+    <div class="arow">
+      <div class="arow-img">
+        <img src="images/half_marathon_finisher.jpg" alt="HYROX & Half Marathon" loading="lazy">
+        <div class="arow-num">01</div>
+      </div>
+      <div class="arow-text">
+        <span class="arow-sport">Endurance Training</span>
+        <h3 class="arow-title">HYROX &<br>Half Marathon</h3>
+        <p class="arow-desc">HYROX is one of the world's hardest functional fitness races — 8km of running broken by 8 strength stations at race pace. He's training to compete. He's already finished a half marathon. The goal isn't just fitness. It's becoming a top-1% athlete, with the discipline to prove it.</p>
+        <div class="arow-chips">
+          <span class="arow-chip">🏃 Half Marathon Finisher</span>
+          <span class="arow-chip">⚡ HYROX Training</span>
+          <span class="arow-chip">🎯 Top 1% Goal</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. SCUBA — image right, cream text left -->
+    <div class="arow rev cream">
+      <div class="arow-img">
+        <img src="images/scuba.jpg" alt="SCUBA Diving" loading="lazy" style="object-position:center 60%">
+        <div class="arow-num">02</div>
+      </div>
+      <div class="arow-text">
+        <span class="arow-sport">Open Water · Going Deeper</span>
+        <h3 class="arow-title">SCUBA<br>Certified</h3>
+        <p class="arow-desc">PADI Open Water certified — he can dive solo to 18 metres in any ocean on earth. He's now working toward Advanced Open Water. The kind of person who doesn't just get close to something and observe it. He goes in.</p>
+        <div class="arow-chips">
+          <span class="arow-chip">🤿 PADI Open Water</span>
+          <span class="arow-chip">📚 Advanced In Progress</span>
+          <span class="arow-chip">🌊 18m Certified Depth</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. SURFING — image left, dark text right -->
+    <div class="arow">
+      <div class="arow-img">
+        <img src="images/surfing_camp_sri_lanka.jpg" alt="Surfing Sri Lanka" loading="lazy">
+        <div class="arow-num">03</div>
+      </div>
+      <div class="arow-text">
+        <span class="arow-sport">Surfing · Two Coasts</span>
+        <h3 class="arow-title">Sri Lanka<br>&amp; Bali</h3>
+        <p class="arow-desc">Two surf camps. Two of Asia's most respected breaks. Sri Lanka's Arugam Bay and Bali's Kuta coast. Not a tourist picking up a foam board for a photo. A learner committing to the wipeouts, the sessions, and the progression — every single time.</p>
+        <div class="arow-chips">
+          <span class="arow-chip">🏄 Arugam Bay, Sri Lanka</span>
+          <span class="arow-chip">🌺 Kuta, Bali</span>
+          <span class="arow-chip">2 Dedicated Surf Camps</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. SKYDIVING — image right, cream text left -->
+    <div class="arow rev cream">
+      <div class="arow-img">
+        <img src="images/skydive.jpg" alt="Skydiving" loading="lazy">
+        <div class="arow-num">04</div>
+      </div>
+      <div class="arow-text">
+        <span class="arow-sport">Freefall · 15,000 Feet</span>
+        <h3 class="arow-title">Skydiving</h3>
+        <p class="arow-desc">15,000 feet. Terminal velocity. The moment of stepping out of the plane is something the human brain never normalizes — every time is the first time for your nervous system. He did it anyway. Most people put this on a bucket list. Very few actually cross it off.</p>
+        <div class="arow-chips">
+          <span class="arow-chip">🪂 15,000 Feet</span>
+          <span class="arow-chip">⚡ Terminal Velocity</span>
+          <span class="arow-chip">✓ Done. Not Planned.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── ⑦ TRAVEL ─── -->
+<section id="travel" class="section">
+  <div class="container">
+    <span class="section-eyebrow reveal">The World</span>
+    <h2 class="section-title reveal delay-1">11 countries.<br><em>Counting.</em></h2>
+
+    <div class="travel-intro-row">
+      <div class="reveal">
+        <p class="section-body">France (Chamonix, Nice, Lyon, Paris). Vietnam (Hanoi, Ho Chi Minh City, Da Nang, Ba Na Hills). Amsterdam. Bali. Sri Lanka. And the next destination is already being planned.</p>
+        <p class="section-body" style="margin-top:16px">Active visas: Schengen, UAE, Singapore, Vietnam. This is not Instagram travel. It's serious geography — alpine France, ancient Vietnam, surf coasts of Sri Lanka.</p>
+        <div class="countries-list" style="margin-top:24px">
+          <span class="country-tag">🇫🇷 France</span>
+          <span class="country-tag">🇻🇳 Vietnam</span>
+          <span class="country-tag">🇳🇱 Netherlands</span>
+          <span class="country-tag">🇮🇩 Indonesia</span>
+          <span class="country-tag">🇱🇰 Sri Lanka</span>
+          <span class="country-tag">🇦🇪 UAE</span>
+          <span class="country-tag">🇸🇬 Singapore</span>
+          <span class="country-tag">+ more</span>
+        </div>
+      </div>
+      <div class="reveal delay-2" style="text-align:center">
+        <div class="travel-num">11</div>
+        <div class="travel-num-label">Countries Explored</div>
+      </div>
+    </div>
+
+    <div class="travel-mosaic reveal">
+      <div class="travel-photo tall">
+        <img src="images/chamonix.jpg" alt="Chamonix, France" loading="lazy">
+      </div>
+      <div class="travel-photo">
+        <img src="images/amsterdam.jpg" alt="Amsterdam" loading="lazy">
+      </div>
+      <div class="travel-photo">
+        <img src="images/nice.jpg" alt="Nice, France" loading="lazy">
+      </div>
+      <div class="travel-photo">
+        <img src="images/hanoi.jpg" alt="Hanoi, Vietnam" loading="lazy">
+      </div>
+      <div class="travel-photo">
+        <img src="images/ho_chi_minh_city.jpg" alt="Ho Chi Minh City" loading="lazy">
+      </div>
+      <div class="travel-photo tall">
+        <img src="images/ba_na_hills.jpg" alt="Ba Na Hills, Vietnam" loading="lazy">
+      </div>
+      <div class="travel-photo tall">
+        <img src="images/lyon.jpg" alt="Lyon, France" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ⑧ LIFESTYLE ─── -->
+<section id="lifestyle" class="section">
+  <div class="container">
+    <span class="section-eyebrow reveal">Lifestyle</span>
+    <h2 class="section-title reveal delay-1">Ambition without<br><em>forgetting to live.</em></h2>
+    <p class="section-body reveal delay-2">He works hard and plays harder. Fine dining, new experiences, interesting conversations, and zero tolerance for boring routines.</p>
+
+    <div class="lifestyle-grid">
+      <div class="lifestyle-card reveal delay-1">
+        <div class="lifestyle-emoji">🍽️</div>
+        <div class="lifestyle-name">Fine Dining</div>
+        <div class="lifestyle-detail">Actively explores new restaurants, cuisines, and dining experiences. Non-veg occasionally.</div>
+      </div>
+      <div class="lifestyle-card reveal delay-2">
+        <div class="lifestyle-emoji">📱</div>
+        <div class="lifestyle-name">AI & Tech</div>
+        <div class="lifestyle-detail">Builds AI applications for fun. His idea of a good evening: making something work.</div>
+      </div>
+      <div class="lifestyle-card reveal delay-3">
+        <div class="lifestyle-emoji">🎬</div>
+        <div class="lifestyle-name">Cinema</div>
+        <div class="lifestyle-detail">Classical movies. Not Netflix-scrolling. Actually watching things with intention.</div>
+      </div>
+      <div class="lifestyle-card reveal delay-4">
+        <div class="lifestyle-emoji">📚</div>
+        <div class="lifestyle-name">Reading</div>
+        <div class="lifestyle-detail">Philosophy, finance, behavioral economics. The kind of reader who makes notes in the margins.</div>
+      </div>
+      <div class="lifestyle-card reveal delay-1">
+        <div class="lifestyle-emoji">🧘</div>
+        <div class="lifestyle-name">Meditation</div>
+        <div class="lifestyle-detail">Daily practice. Mornings. Not a trend — a foundation.</div>
+      </div>
+      <div class="lifestyle-card reveal delay-2">
+        <div class="lifestyle-emoji">📈</div>
+        <div class="lifestyle-name">Investing</div>
+        <div class="lifestyle-detail">Equity, Mutual Funds, Gold. Building wealth through markets, not just earning.</div>
+      </div>
+      <div class="lifestyle-card reveal delay-3">
+        <div class="lifestyle-emoji">🛍️</div>
+        <div class="lifestyle-name">Experiences</div>
+        <div class="lifestyle-detail">Socializing, shopping, discovering Bengaluru's best kept secrets.</div>
+      </div>
+      <div class="lifestyle-card reveal delay-4">
+        <div class="lifestyle-emoji">✍️</div>
+        <div class="lifestyle-name">Writing</div>
+        <div class="lifestyle-detail">Occasional writer. Thinks clearly enough to put it into words.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:32px;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;max-height:480px;box-shadow:var(--shadow-lg)" class="reveal">
+      <img src="images/trying_cuisines.jpg" alt="Exploring cuisines" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 40%">
+    </div>
+  </div>
+</section>
+
+<!-- ─── ⑨ FAMILY ─── -->
+<section id="family" class="section">
+  <div class="container">
+    <!-- Header + Story -->
+    <div class="split-layout" style="margin-bottom:64px">
+      <div class="story-text reveal">
+        <span class="section-eyebrow">Family</span>
+        <h2 class="section-title">Born in Pune.<br><em>Built in Panvel.</em></h2>
+        <blockquote class="story-quote">"Family comes first. Always. Everything else gets built around that."</blockquote>
+        <p class="story-para">Close-knit nuclear family of four, from Panvel, Maharashtra. Both parents are engineering graduates from top government colleges — COEP and GEC Aurangabad. The household is intellectually rigorous and genuinely warm. They travel together. They argue about ideas. They show up for each other.</p>
+        <p class="story-para">His sister Ishita at 23 is already a financial analyst at Morningstar and clearing CFA Level III — on the same trajectory as her brother. This is not coincidence. It's the household they grew up in.</p>
+        <p class="story-para" style="margin-top:8px">They are connected with and share warm relationships with their grandparents and cousins. Not a performative family. A real one.</p>
+      </div>
+
+      <div class="reveal delay-2" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:start">
+        <div style="border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow-lg)">
+          <img src="images/family_in_bali.jpg" alt="Family in Bali" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <div style="border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow-lg);margin-top:32px">
+          <img src="images/with_ishita_in_bali.jpg" alt="With Ishita in Bali" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+        </div>
+      </div>
+    </div>
+
+    <!-- Family photo — Da Nang -->
+    <div class="da-nang-wrap reveal">
+      <img src="images/da_nang_family.jpg" alt="Family in Da Nang, Vietnam" loading="lazy">
+    </div>
+
+    <div class="family-members-grid" style="margin-top:48px">
+      <div class="family-member-card reveal delay-1">
+        <div class="member-icon">👨‍💼</div>
+        <div class="member-name">Vishwas Kulkarni</div>
+        <div class="member-role">Father</div>
+        <div class="member-detail">Sr. General Manager at Reliance Industries Ltd. B.E. from College of Engineering Pune (COEP). The kind of man who built his career through integrity and discipline — and passed both on to his children.</div>
+      </div>
+      <div class="family-member-card reveal delay-2">
+        <div class="member-icon">👩‍🏠</div>
+        <div class="member-name">Kirti Kulkarni</div>
+        <div class="member-role">Mother</div>
+        <div class="member-detail">Former Design Engineer at Mahati Electrical. B.E. GEC Aurangabad. Now homemaker. An engineer who chose her family as her life's greatest project. Warm, present, reachable: <strong>+91-7738384870</strong>.</div>
+      </div>
+      <div class="family-member-card reveal delay-3">
+        <div class="member-icon">👩‍💻</div>
+        <div class="member-name">Ishita Kulkarni</div>
+        <div class="member-role">Sister · 4 years younger</div>
+        <div class="member-detail">Financial Research Analyst at Morningstar. B.E. COEP. CFA Level III candidate at 23. She's building the same kind of life as her brother — with the same seriousness and depth.</div>
+      </div>
+    </div>
+
+    <div class="family-note reveal" style="margin-top:48px">
+      <p>"They have built their lives on strong principles of integrity, education, and balanced living. The family that travels to Bali together, argues about markets at the dinner table, and shows up for each other without keeping score."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ⑩ PARTNER VISION ─── -->
+<section id="partner">
+  <div class="partner-inner">
+    <span class="partner-eyebrow reveal">Looking For</span>
+    <h2 class="partner-title reveal delay-1">Not a checklist.<br><em>A person.</em></h2>
+
+    <div class="partner-statements">
+      <div class="partner-statement reveal">
+        <div class="partner-stmt-num">01</div>
+        <div class="partner-stmt-content">
+          <span class="partner-stmt-label">Groundedness</span>
+          <h3 class="partner-stmt-headline">She knows who she is.</h3>
+          <p class="partner-stmt-body">Not in a fixed, defensive way — but in a way that means she doesn't need approval from a room to feel secure. She's done enough internal work to show up honestly in a relationship without performing a version of herself.</p>
+        </div>
+      </div>
+      <div class="partner-statement reveal delay-1">
+        <div class="partner-stmt-num">02</div>
+        <div class="partner-stmt-content">
+          <span class="partner-stmt-label">Ambition</span>
+          <h3 class="partner-stmt-headline">She's building something.</h3>
+          <p class="partner-stmt-body">A career she cares about. An idea she's developing. A skill she's sharpening. It doesn't need to be loud. But there's forward motion — and she's the one driving it. He's not looking for someone to support. He's looking for someone to build alongside.</p>
+        </div>
+      </div>
+      <div class="partner-statement reveal delay-2">
+        <div class="partner-stmt-num">03</div>
+        <div class="partner-stmt-content">
+          <span class="partner-stmt-label">Curiosity</span>
+          <h3 class="partner-stmt-headline">She's genuinely interested in the world.</h3>
+          <p class="partner-stmt-body">Not just in her domain, or her city, or her immediate circle — but in ideas, places, people, and questions that don't have easy answers. The kind of person who makes a dinner conversation worth remembering.</p>
+        </div>
+      </div>
+      <div class="partner-statement reveal delay-3">
+        <div class="partner-stmt-num">04</div>
+        <div class="partner-stmt-content">
+          <span class="partner-stmt-label">Alignment</span>
+          <h3 class="partner-stmt-headline">Family is not negotiable for either of them.</h3>
+          <p class="partner-stmt-body">He grew up in a close, warm family and intends to build another one. He's looking for someone who feels the same — not as an obligation, but as something genuinely desired. That's the non-negotiable. Everything else is a conversation.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="partner-commit reveal delay-1" style="margin-top:16px">
+      <div class="partner-commit-item">
+        <div class="partner-commit-icon">🤝</div>
+        <div class="partner-commit-name">Unwavering Partnership</div>
+        <div class="partner-commit-detail">Not conditional on moods or seasons. Consistent, present, fully invested.</div>
+      </div>
+      <div class="partner-commit-item">
+        <div class="partner-commit-icon">📈</div>
+        <div class="partner-commit-name">Your Growth Too</div>
+        <div class="partner-commit-detail">He will invest in your career, your ambitions, and your life — not just his own.</div>
+      </div>
+      <div class="partner-commit-item">
+        <div class="partner-commit-icon">🏠</div>
+        <div class="partner-commit-name">Family Always First</div>
+        <div class="partner-commit-detail">Strong investment in building a real life together. With intent. Not drift.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ⑪ CONTACT ─── -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-photo reveal">
+      <img src="images/profile_photo_paris.jpg" alt="Ishan Kulkarni" loading="lazy">
+    </div>
+
+    <h2 class="contact-title reveal delay-1">Let's start<br><em>a conversation.</em></h2>
+    <p class="contact-sub reveal delay-2">He manages this profile himself. 97% response rate. Usually replies within a day. Reach out directly — or get in touch with his family.</p>
+
+    <div class="contact-actions reveal delay-3">
+      <a href="https://wa.me/917718849191?text=Hi%20Ishan%2C%20I%20came%20across%20your%20profile%20and%20would%20love%20to%20connect." class="contact-btn-primary" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp Ishan
+      </a>
+      <a href="tel:917738384870" class="contact-btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l.62-.62a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Kirti Aai (Mother)
+      </a>
+    </div>
+
+    <div class="contact-divider"></div>
+
+    <div class="anuroop-cta-box reveal">
+      <span class="anuroop-label">Anuroop Profile ID</span>
+      <div class="anuroop-id">MT15685</div>
+      <button class="anuroop-copy-btn" onclick="copyAnuroop()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        Copy ID to Search on Anuroop
+      </button>
+    </div>
+
+    <div class="social-links reveal delay-1">
+      <a href="https://www.instagram.com/cold.monk/" class="social-link" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        @cold.monk
+      </a>
+      <a href="https://www.linkedin.com/in/ishan-kulkarni" class="social-link" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOROSCOPE ─── -->
+<section id="horoscope" style="background:var(--cream-2);padding:72px 24px">
+  <div class="container-sm" style="text-align:center">
+    <span class="section-eyebrow reveal" style="display:block;text-align:center">For the Families</span>
+    <h2 class="section-title reveal delay-1" style="text-align:center">Horoscope &<br><em>Verification</em></h2>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:40px;max-width:600px;margin-left:auto;margin-right:auto">
+      <div class="glance-card reveal delay-1"><div class="glance-icon">♉</div><div class="glance-value" style="font-size:1.3rem">Vrushabh</div><div class="glance-label">Rashi (Taurus)</div></div>
+      <div class="glance-card reveal delay-2"><div class="glance-icon">⭐</div><div class="glance-value" style="font-size:1.3rem">Rohini</div><div class="glance-label">Nakshatra · Pada 4</div></div>
+      <div class="glance-card reveal delay-3"><div class="glance-icon">🕉️</div><div class="glance-value" style="font-size:1.3rem">Shandilya</div><div class="glance-label">Gotra</div></div>
+      <div class="glance-card reveal delay-4"><div class="glance-icon">✓</div><div class="glance-value" style="font-size:1.3rem">Non-Manglik</div><div class="glance-label">Mangal Status</div></div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:28px" class="reveal">
+      <span class="verified-badge">✓ Income Verified</span>
+      <span class="verified-badge">✓ Education Verified</span>
+      <span class="verified-badge">✓ Identity Verified</span>
+      <span class="verified-badge">✓ Mobile Verified</span>
+      <span class="verified-badge">✓ Premium Plus</span>
+    </div>
+    <p style="font-size:.82rem;color:var(--ink-3);margin-top:20px" class="reveal delay-1">Birth: 4 December 1998 · 05:47 AM · Pune, Maharashtra · Deshastha Rigwedi Brahmin</p>
+    <p style="font-size:.82rem;color:var(--ink-3);margin-top:6px" class="reveal delay-2">Full Kundali available on <strong style="color:var(--gold)">Anuroop · MT15685</strong></p>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer style="background:var(--ink);color:var(--cream);padding:48px 24px 80px;text-align:center">
+  <div class="container-sm">
+    <p style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;margin-bottom:6px;color:var(--cream)">Ishan Kulkarni</p>
+    <p style="font-size:.8rem;color:rgba(247,244,238,.4);margin-bottom:28px;letter-spacing:.06em">ANUROOP · MT15685 · PREMIUM PLUS</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:24px;font-size:.8rem;color:rgba(247,244,238,.55);margin-bottom:28px">
+      <a href="https://wa.me/917718849191" style="color:rgba(247,244,238,.55);text-decoration:none" target="_blank" rel="noopener">WhatsApp · +91 77188 49191</a>
+      <a href="tel:917738384870" style="color:rgba(247,244,238,.55);text-decoration:none">Kirti Aai · +91 77383 84870</a>
+      <a href="https://www.instagram.com/cold.monk/" style="color:rgba(247,244,238,.55);text-decoration:none" target="_blank" rel="noopener">Instagram · @cold.monk</a>
+      <a href="https://www.linkedin.com/in/ishan-kulkarni" style="color:rgba(247,244,238,.55);text-decoration:none" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div style="width:40px;height:1px;background:rgba(247,244,238,.15);margin:0 auto 24px"></div>
+    <p style="font-size:.72rem;color:rgba(247,244,238,.25);letter-spacing:.06em">PANVEL · BENGALURU · EVERYWHERE ELSE · 2026</p>
+  </div>
+</footer>
+
+<!-- ─── SCRIPTS ─── -->
+<script>
+/* ── Dynamic OG / canonical URL (for WhatsApp preview after deploy) ──
+   To change the WhatsApp preview image: update og:image content= in <head> above.
+   This script just converts the relative path to absolute once deployed.         */
+(function() {
+  const base    = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/');
+  const imgMeta = document.getElementById('og-image');
+  const urlMeta = document.getElementById('og-url');
+  const twImg   = document.getElementById('tw-image');
+  // Absolutize whatever image path is set in the meta tags
+  if (imgMeta) { const p = imgMeta.getAttribute('content'); if (!p.startsWith('http')) imgMeta.content = base + p; }
+  if (twImg)   { const p = twImg.getAttribute('content');   if (!p.startsWith('http')) twImg.content   = base + p; }
+  if (urlMeta) urlMeta.content = window.location.href;
+})();
+
+/* ── Custom Cursor ── */
+const cursor = document.getElementById('cursor');
+const hoverEls = document.querySelectorAll('a, button, .athlete-card, .glance-card');
+if (window.matchMedia('(pointer:fine)').matches) {
+  let moved = false;
+  document.addEventListener('mousemove', e => {
+    cursor.style.transform = `translate(${e.clientX - 5}px, ${e.clientY - 5}px)`;
+    if (!moved) { cursor.classList.add('visible'); moved = true; }
+  });
+  hoverEls.forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('expanded'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('expanded'));
+  });
+}
+
+/* ── Scroll Reveal ── */
+const revealEls = document.querySelectorAll('.reveal');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+revealEls.forEach(el => revealObs.observe(el));
+
+/* ── Sticky CTA Bar ── */
+const ctaBar = document.getElementById('cta-bar');
+const heroNav = document.getElementById('hero-nav');
+const showThreshold = window.innerHeight * 0.6;
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  if (y > showThreshold) ctaBar.classList.add('visible');
+  else ctaBar.classList.remove('visible');
+  if (y > 20) heroNav.classList.add('scrolled');
+  else heroNav.classList.remove('scrolled');
+}, { passive:true });
+
+/* ── Copy Anuroop ID ── */
+function copyAnuroop() {
+  const id = 'MT15685';
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(id).then(showToast);
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = id; document.body.appendChild(ta);
+    ta.select(); document.execCommand('copy');
+    document.body.removeChild(ta); showToast();
+  }
+}
+function showToast() {
+  const t = document.getElementById('copy-toast');
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+/* ── Counter Animation for Travel Number ── */
+function animateCounter(el, target, duration) {
+  let start = null;
+  const step = (timestamp) => {
+    if (!start) start = timestamp;
+    const progress = Math.min((timestamp - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(eased * target);
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = target;
+  };
+  requestAnimationFrame(step);
+}
+const travelNum = document.querySelector('.travel-num');
+const counterObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateCounter(travelNum, 11, 1200);
+      counterObs.unobserve(e.target);
+    }
+  });
+}, { threshold:0.5 });
+if (travelNum) counterObs.observe(travelNum);
+
+/* ── Parallax on hero photo (subtle) ── */
+const heroPhotoWrap = document.querySelector('.hero-photo-wrap');
+if (heroPhotoWrap && window.matchMedia('(pointer:fine)').matches) {
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    heroPhotoWrap.style.transform = `translateY(${y * 0.12}px)`;
+  }, { passive:true });
+}
+</script>
+
+</body>
+</html>
